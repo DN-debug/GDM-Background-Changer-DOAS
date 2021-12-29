@@ -1,11 +1,12 @@
 
 # GDM-Background-Changer-DOAS
-## Demo
-
-![](gbc_test.gif)
-
 Change your GDM background easily using GDM-Background-Changer. This version of GDM-Background-Changer or gbc uses DOAS for authentication. The user interaction is done
 using Zenity.
+
+## Demo
+A bit of screen tearing is visible but the job of demo is getting done.
+![](gbc_test.gif)
+
 ## How to use?
 Follow the steps below to use this changer on your system.
 Note: This is only for Arch-based systems.
