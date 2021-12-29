@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/usr/local/bin/frontend-gbc
+Name=GDM-Background-Changer
+Icon=gdm
+Type=Application
+Version=1.0

@@ -1,0 +1,52 @@
+#!/bin/bash
+# =================================================================== #
+# Author : DN-debug
+# Description : Front UI for GDM-Background-Changer.
+# =================================================================== #
+
+# function to handle the changer script
+function run() {
+    if [ $? = 0 ]; then
+        DOAS_ASKPASS="zenity --password --title=Authentication" doas_askpass gdm-background-changer $FILE
+    else
+        exit
+    fi
+}
+
+# function to hand over selections to the user
+function choose() {
+
+  # Dialog will only show the file types defined in the Zenity filter.
+  # This minimizes the file-check impact in the backend-script.
+
+  FILE="$(zenity --file-selection --title='Select a File' --file-filter='Image files (JPEG,PNG) | *.jpg *.jpeg *.png')"
+  case $? in
+           0)
+                  run;;
+           1)
+                  zenity --question \
+                         --title="GDM-Background-Changer" \
+                         --text="No image selected. Do you want to select one?" --width=500 \
+                         && choose || exit;;
+          -1)
+                  echo "An unexpected error has occurred."; exit;;
+  esac
+}
+
+# initial UI
+function ui() {
+    zenity --question --title='GDM-Background-Changer' --text='A simple GDM background changer.' \
+           --ok-label='Select' \
+		   --cancel-label='Cancel' --width=500
+
+    if [ $? = 0 ]; then
+        choose
+        notify-send "Logout to test!" -i information
+
+    else
+        exit
+    fi
+}
+
+
+ui
