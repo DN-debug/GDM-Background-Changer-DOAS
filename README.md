@@ -20,6 +20,10 @@ For Cleanup
 ```
 To test it, launch the Application-Menu and search for GDM-Background-Changer.
 Launch and try it!
+
+Note: If you would like to use the SUDO version of this script
+then visit [GDM-Background-Changer-SUDO](https://github.com/DN-debug/GDM-Background-Changer-SUDO)
+
 ## Credits
 
 - Major credit to Thiago Silva, as this is a shameless fork of his work - [change-gdm-background](https://github.com/thiggy01/change-gdm-background)
