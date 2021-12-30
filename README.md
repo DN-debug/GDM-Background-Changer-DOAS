@@ -13,8 +13,8 @@ Note: This is only for Arch-based systems.
 
 For Setup
 ```bash
-  git clone https://github.com/DN-debug/GDM-Background-Changer-DOAS.git gcb-doas
-  cd gcb-doas
+  git clone https://github.com/DN-debug/GDM-Background-Changer-DOAS.git gbc-doas
+  cd gbc-doas
   sudo ./install.sh
 ```
 For Cleanup
