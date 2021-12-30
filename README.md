@@ -4,7 +4,7 @@ Change your GDM background easily using GDM-Background-Changer. This version of 
 using Zenity.
 
 ## Demo
-A bit of screen tearing is visible but the job of demo is getting done.
+A bit of screen tearing is visible in the gif but the job of showing the demo is getting done.
 ![](gbc_test.gif)
 
 ## How to use?
