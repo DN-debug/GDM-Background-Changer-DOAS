@@ -37,6 +37,7 @@ then visit [GDM-Background-Changer-SUDO](https://github.com/DN-debug/GDM-Backgro
 
 ## Feedback & Contribution
 
+Decided to make it publicly available because the more people would check the code, more good ideas would pop-up.
 If you have any feedback/suggestions/issues then
 please create the respective PRs/issue-tickets. 
 
